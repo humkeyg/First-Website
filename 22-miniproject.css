@@ -1,0 +1,73 @@
+
+body { /*everything under the body element will have these attributes*/
+    position: relative;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    background-color: rgb(240, 207, 240);
+    color: rgb(92, 30, 1);
+    text-align: right; /*alignment for the header list belongs in the body element bc it is parented here*/
+}
+
+h1,
+h2 {
+    margin: 20px;
+    /*this is the space this element's border*/
+}
+
+main {
+    text-align: center; /*alignment can be changed here, even though it is under the body element*/
+    padding: 60px;
+    /*this is the space between this element and the other content on the page*/
+}
+
+nav {
+    line-height: 1.5; /*does this mean double line spacing?*/
+}
+
+li {
+    display: inline-block;
+    padding: 0px 20px; /*syntax is top right bottom left*/
+    text-decoration: none; /*not putting a none selection for text-dec will automatically underline the contents of this element*/
+}
+
+a {
+    text-decoration: none;
+    color: black; 
+}
+
+header,
+footer { /*general formatting for both of these elements*/
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background-color: rgb(68, 212, 212);
+}
+
+header {
+    position: fixed;
+    border-bottom: 5px solid rgb(0, 170, 170);
+}
+
+footer {
+    position: absolute;
+    margin-top: 10;
+    bottom: 10;
+    border-bottom: 10px solid rgb(0, 170, 170);
+}
+
+.text-center {
+    text-align: center;
+}
+
+img {
+    border: 7px solid turquoise;
+}
+
+label {
+    text-align: right;
+}
+
+input {
+    border:3px solid rgb(0, 170, 170);
+    border-radius: 7px;
+}
